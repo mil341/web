@@ -1,0 +1,189 @@
+            body{
+                background-color: floralwhite; /*Coloca un color al fondo*/
+                background-size: cover; /*Ajusta la imagen en toda el fondo de la pgina*/
+                background-image: url(n.jpg);
+    
+            }
+            header {
+            background-color: #71C6D9; /*Coloca un color de fondo*/
+            font-family:  Script MT Bold ; /*Coloca un un tipo de letra al encabezado*/
+            color: white; /*Coloca un color a la letra*/
+            font-style: initial;
+            margin-top: 25px; /*Ajusta el tamaño del borde*/
+            border-color: burlywood; /*Coloca un color al borde*/
+            border-radius: 5px; 
+            height: 120px;
+       
+            position: static;
+            
+            background-image: url('gg.png'); /*Coloca una imagen o icono alencabezado*/
+            background-size:182px; /*Ajusta el tamaño de la imagen*/
+            background-position: left; /*Ajusta la imagen a una posicion; left,right,center*/
+            background-repeat: no-repeat; /*Evita que la imagen se repita*/
+            
+            }
+
+       
+    
+            nav {
+            justify-content: center; /*Ajusta el contenido al centro*/
+            display:flex; /*Centra la barra de navegación*/
+            background-color:#F2CED1;
+            font-size: 30;  /*Ajusta el tamaño del contenido*/
+            grid-gap: 70px; /*Separa los elementos de la barra de navegación*/
+            font-style:initial;
+            border-radius: 5px;
+            padding: 30px;
+            }
+
+
+            aside{
+            margin-top: 150px; 
+            background: linear-gradient(45deg, #F29BAB,#F2AEB4,#F2CED1 );
+            float: left; 
+            width:120px;
+            height: 150px;
+            padding: 70px;
+            font-size: 15px;
+            position: fixed;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.9);
+            font-family: Script MT Bold;
+            font-style:initial;
+            color: beige;
+            border-radius: 15px;
+            }
+
+             section {
+            width: 50%;
+            position: right;
+            margin: 450px;
+            padding: 20px;
+            background: linear-gradient(45deg, antiquewhite,#F2AEB4,#F2CED1 );
+            border-radius: 10px;
+            opacity: 0.9;
+            color: cornsilk;
+            border-color: antiquewhite;   
+            border-style: dotted;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 10);
+        }
+
+        aside1{
+            margin-top: 55px; 
+            background: linear-gradient(45deg, #93E0ED, #89D1D9);
+             background-image: url(reloj2.jpg);
+             top: 80px;
+            left: 30px;
+            width:30px;
+            height:10px;
+            padding: 70px;
+            font-size: 15px;
+            position:fixed;
+            
+            font-family: Script MT Bold;
+            font-style: oblique;
+            color: beige;
+            border-radius: 15px;
+            }
+
+            article{
+            width: 40%;
+            margin:900px;
+            margin-left:190px;
+            color: white;
+            background: linear-gradient(45deg, antiquewhite,hotpink,#F2CED1 );
+            padding: 20px;
+            font-size:14px;
+            font-family: cursive;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+            
+           }
+
+            /* Estilos para la barra superior */
+            .barra-superior {
+            background-color: lightpink; 
+            color: white; 
+            padding: 2px;
+            position: fixed; /*Permite que un elemento permanesca fijo en una posición*/
+            top: 0;
+            width: 98.7%; 
+            position: fixed;
+            display: flex; /*Permite que los elementos se organizen en línea (horizontalmente, por defecto)*/
+            justify-content: space-between;  /*Esto distribuye los elementos en el eje horizontal con espacio igual entre ellos.*/
+            align-items: center; /*Alinea los elementos verticalmente en el centro, dando un aspecto equilibrado y ordenado.*/
+            }
+
+            /* Estilos para el botón de salida */
+            .barra-superior a {
+            color: white;
+            text-decoration: none; 
+            padding: 8px 12px; 
+            background-color: lightblue; 
+            border-radius: 5px; /*Se utiliza para redondear las esquinas de un elemento*/
+            font-weight: bold; 
+            }
+            .barra-superior a:hover {
+            background-color: palevioletred; /* Cambiar color al pasar el mouse */
+            }
+            /* Espaciado para el contenido principal */
+
+            .contenido {
+            margin-top: 50px;
+            padding: 20px; /*Define el espacio dentro del borde del elemento*/
+            }
+
+            .bannerf {
+            place-content:flex-end;
+            margin-top: -900px;
+            position: static;
+            display: flex; /* Hace que las imágenes se coloquen horizontalmente */
+            overflow: hidden; /* Oculta el contenido que se salga del contenedor */
+            width: 90%; /* Ajusta el ancho del banner */
+            height: 220px; /* Define la altura del banner */
+                }
+            .banner img {
+            width: 50%; /* Cada imagen ocupará el ancho del banner */
+            flex-shrink: 0; /* Evita que las imágenes se reduzcan */
+            object-fit: cover; /* Ajusta la imagen para que ocupe todo el espacio */
+            }
+
+
+            .parrafo1{
+            color: deeppink;
+            text-decoration:underline; 
+            }
+
+                
+            .parrafo2{
+            background-color: deeppink;
+            color: white;
+            text-decoration:line-through; 
+            box-shadow:  5px 5px 5px lightpink;
+            }
+
+
+            .parrafo4{
+            color: white;
+                background-color: wheat;
+            
+            }
+
+            footer {
+            height: 175px;
+            margin-top: 900px;
+            background-color: lightblue;
+            border-style: double;
+            color: white;
+            border: 15px;
+            border-radius: 60px;
+            border-style:dotted ;
+            border-color:skyblue;
+            color: black;
+            position:static;
+
+         
+        
+        
+  
+
+      

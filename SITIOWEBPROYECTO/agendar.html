@@ -1,0 +1,441 @@
+<!DOCTYPE HTML>
+<html lang="es">
+    <html lang="en">
+    <meta charset="UTF-8">
+    <head>
+    <title>Agendar Cita Medica</title>
+        <link rel="stylesheet" type="text/css" href="Elegantep.css">
+        
+    <script src="sumajs.js"></script>
+
+        <script>
+    (function(){
+     //Definir banners como array de objetos con propiedades de imagen y URL
+        const banners=[
+            
+            {   img:"CH.png", url:
+                "https://www.facebook.com/consultoriossantacruz/"},
+            {   img:"co.png", url:
+            "https://centromedicosantacruz.com/consultas-m%C3%A9dicas" },
+            {   img:"c.png", url:
+            "https://www.intersite.com.mx/santacruzcentromedico/" },
+        ];
+        //Inicializar el contador
+        let contador=0;
+        //Funcion para rotar el contador
+        function alternarBanner(){
+        const bannerImg=document.getElementById('bannerImg');
+        const bannerLink=bannerImg.parentNode;
+        //Actualizar imagen y Url
+        bannerImg.src = banners[contador].img;
+        bannerLink.href = banners[contador].url;
+            bannerLink.target="_blank";
+        //Incrementar Contador De Forma Circular
+        contador=(contador + 1) % banners.length;
+        //Llamar a AlternarBanner cada segundo
+        setTimeout(alternarBanner,1000);
+        
+     }
+     
+     //Añadir evento DOMContenLoaded para iniciar la rotacion de banners
+     document.addEventListener('DOMContentLoaded', alternarBanner);
+        })();
+    </script>
+    <script languaje="javascript">
+            
+                //muestra una galeria de imagenes
+            function ver_imagen(){
+                
+                if(!document.images)
+                    return
+                    document.images.img.src=document.imagenes.imagen.options[document.imagenes.imagen.selectedIndex].value
+            }
+            </script>
+    <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="Elegantep.css">
+        <Style>
+            #re{
+              position:absolute;
+              left:820px;
+              top:1440px;
+              width: 390px;
+              height: 285px;
+              border: solid #90B9F9 8px;
+              background-image: url(burbu.jpg);
+              border-radius: 30px;
+          }
+          #formul{
+              position: absolute;
+              left:328px;
+              top:2409px;
+              width: 450px;
+              height: 204;
+              background-image: url(flor.jpg);
+          } 
+          #cam{
+              position:absolute;
+              left:380px;
+              top:560px;
+              width: 800px;
+              height: 400;
+          }
+          marquee{
+                color: cornflowerblue; 
+                background: linear-gradient(45deg,rgb(106, 210, 228), rgb(119, 107, 185), rgb(158, 157, 223));
+                font-size: 18px;
+                padding: 2px;
+                border: 2px;
+                border-radius: 35px;
+                
+          }
+          #img1{
+              position:absolute;
+              left:230px;
+              top:43px;
+              width: 20px;
+              height: 24px;
+          }
+         #img2{
+              position:absolute;
+              left:1350px;
+              top:49px;
+              width: 20px;
+              height: 24px;
+          }
+          #mitexto2{
+            position: absolute;
+            left: 698px;
+            top: 1035px;
+            width:600px;
+            height:360px;
+            border: solid #A484FA 8px;
+            background-color: #E9CEC5;
+            border-radius: 5px;
+            background-image: url(med.jpg);
+        }
+          #mitexto{
+            position: absolute;
+            left: 340px;
+            top: 250px;
+            width:870px;
+            height:280px;
+            border-radius: 20px; 
+            border: solid #90B9F9 8px;
+            background-image: url(ocean.jpg);
+        }
+        #horas{
+            position: absolute;
+            left: 305px;
+            top: 1610px;
+            width:505px;
+            height:255px;
+            border: solid #A484FA 5px;
+              border-radius: 10px;
+          }
+        #tab{
+            position: absolute;
+            left: 690px;
+            top: 1895px;
+            width:565px;
+            height:358px;
+            border: solid #697CFA 8px;
+            background-color: #E9CEC5;
+            border-radius: 20px;
+            background-image: url(medul.jpg); 
+        }
+        #on{
+              position: absolute;
+              left:998px;
+              top:2430px;
+              width: 80px;
+              height: 24;
+              background-color: #E9CEC5;
+            border-radius: 15px; 
+              border: solid #90B9F9 8px;
+            background-color: #E9CEC5;
+          } 
+        #g{
+              position: absolute;
+              left:840px;
+              top:2510px;
+              width: 20px;
+              height: 24;
+          }  
+          #galeria{
+              position: absolute;
+              left:320px;
+              top:1060px;
+              width: 20px;
+              height: 24;
+          }
+          #frut{
+              position:absolute;
+              left:810px;
+              top:585px;
+              width: 390px;
+              height: 285px;
+              border: solid #90B9F9 8px;
+              background-image: url(burbu.jpg);
+              border-radius: 30px;
+          }
+          #opinion{
+              position: absolute;
+              left:380px;
+              top:1930px;
+              width: 250px;
+              height: 594;
+              border-radius: 15px; 
+              border: solid #90B9F9 8px;
+              background-image: url(mor.jpg);
+          } 
+          #vi1{
+            position:absolute;
+              left:870px;
+              top:1655px;
+              border-style:dotted ;
+              border-color:rgb(128, 46, 117);
+              
+        }
+            </Style>
+        </head>
+        <body >
+            <aside1>
+        <script>
+            function Ver_Hora() {
+                var mihora = new Date();
+                var horas = mihora.getHours().toString();
+                var minutos = mihora.getMinutes().toString();
+                if (minutos.length == 1) minutos = "0" + minutos; // Ensure 2-digit minutes
+                var segundos = mihora.getSeconds().toString();
+                if (segundos.length == 1) segundos = "0" + segundos; // Ensure 2-digit seconds
+                document.forms[0].mireloj.value = horas + ":" + minutos + ":" + segundos;
+            }
+        </script>
+             <form>
+            <p align="center">
+                <input type="text" size="10" name="mireloj" readonly>
+            </p>
+        </form>
+        <script>
+            var r = setInterval(Ver_Hora, 500); // Call Ver_Hora() every 500 milliseconds
+        </script> </aside1>
+        <div id="formul"><h1 id="agendar"></h1> 
+    <form>
+        <fieldset>
+            <legend>Agenda tu Cita</legend>
+
+            <label for="n1">Nombre completo:</label>
+            <input type="text" name="n1" id="n1" placeholder="El nombre y apellido" required>
+            <br><br>
+            <label for="n2">Fecha de nacimiento:</label>
+            <input type="date" name="n2" id="n2" required>
+            <br><br>
+            <label for="n3">Dirección:</label>
+            <input type="text" name="n3" id="n3" placeholder="La dirección del paciente" required>
+            <br><br><br>
+            <label for="n4">Fecha :</label>
+            <input type="date" name="n4" id="n4" required>
+            <br><br><br>
+            <label for="n5">Hora :</label>
+            <input type="time" name="n5" id="n5" required>
+            <br><br><br>
+            <label for="n6">Tipo de cita:</label>
+            <input type="text" name="n6" id="n6" placeholder="El tipo de cita médica" required>
+            <br><br><br>
+            <label for="resuls">La cita es:</label>
+            <input type="text" name="resuls" id="resuls" readonly>
+            <br><br><br>
+
+            <button type="button" onclick="agendar()">Agendar</button>
+            <button type="button" onclick="cancelar()">Cancelar</button>
+        </fieldset>
+    </form>
+        </div>
+
+        <div id="cam">
+            <img src="esp.png" alt="" width="380" height="330" onmouseover="ejemplo();"
+            onmouseout="ejemplo2();" id="i"></div>
+            <script>
+     function ejemplo() {
+     document.getElementById('i').setAttribute('src','esp.png');
+}
+     function ejemplo2() {
+     document.getElementById('i').setAttribute('src','do.png');
+}
+</script>
+<div id="on"><button onclick="mensaje();">Hacer click </button></div>
+<script>
+    function mensaje(){
+        alert("✧☁*ੈ♡⸝Felicidades puedes Agendar tu Cita Medica✧☁*ੈ♡⸝") ;
+    }
+</script>
+
+<div id="opinion"><center>
+    <p><font color="white"> Que opinas de las horas de atencion</font></p>
+              <font color="white">  <input type="text" onkeydown="ejemplo(this);">
+     <p id="p"></p><br>
+     <button type="button" onclick="enviar()">Enviar</button>
+            </div></center></font>
+            <script>
+    function enviar() {
+        alert("¡Comentario Enviado!");
+
+    }            
+     function ejemplo(x) {
+     document.getElementById('p').innerHTML=x.value;
+}
+ </script>
+            
+<div id="g"> <center>
+      <a href="#"> <img id="bannerImg" src="#" width="380" height="270" border="0"></a>
+    </center></div>
+    
+
+    <div id="galeria">
+            <form name="imagenes">
+        <select name="imagen" size="1" onchange="ver_imagen()">
+            <option value="con1.png">Elige una imagen </option>
+        <option value=" con2.png">Consultorio 1</option>
+            <option value=" con3.png">Consultorio 2</option>
+            <option value=" cons.png">Consultorio 3</option>
+        </select>
+        </form>
+        <img src="con1.png" name="img" width="330" height="290" border="3">
+            </div>
+            
+            
+    <div id="frut"><FONT COLOR=white><center>
+                 <b><p><u>COMO AGENDAR UNA CITA𐐂𐐚</u></p></b>
+        <select id="SelFrutas" onchange="getFruta()">
+            <option value="Desiza para conocer el paso a paso">Paso a Paso</option>
+        <option value="Accede al portal web: Al sitio web donde puedes agendar citas en línea.">Paso 1 </option>
+        <option value="Llamar al hospital: Si no hay opción en línea, puedes comunicarte por teléfono con el hospital y solicitar una cita.">Paso 2</option>
+        <option value="Aplicaciones móviles: Aplicacion donde puedes agendar citas directamente.">Paso 3</option>
+        <option value="Presencialmente: Dirígirte al hospital para pedir la cita en el área correspondiente.">Paso 4</option>
+        </select>
+       <p id="pf"></p>
+               </center></FONT></div>
+               <script>
+            function getFruta(){
+                var f= document.getElementById("SelFrutas").value;
+                document.getElementById("pf").innerHTML= "El personaje selacionado fue:" + f;
+            }
+        </script>
+    <header>
+            <center>
+                <br>
+                    <h1 id="Componente">  Centro de Salud de Santa Cruz Tepexpan </h1>
+                <br>
+            </center>
+                <div id="img1">
+                <img src="cecytem.png" width="80" height="80">
+                </div>
+                
+                <div id="img2">
+                <img src="logotipoP.png.jpg" width="90" height="95">
+                </div>
+            </header>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="programas.html">Programas</a>
+                <a href="Cuidan">Cuidan de ti</a>
+                <a href="Atención">Atención Médica</a>
+                <a href="agendar.html">Agendar Cita</a>
+                <a href="Huesero.html">¿Sabias Qué?</a>
+            </nav>
+            <aside>
+                <h2>SOBRE TU CITA ୨ৎ</h2>
+                    <OL>
+                    <li><a href="#CONSULTORIOS">Consultorios </a></li>
+                    <li> <a href="#atencion">Horarios</a></li>
+                    <li><a href="#agendar">Agendar </a></li>
+                    </OL>
+        </aside>   
+            <br>
+            <br>
+            <div class="barra-superior">
+        <div>402 </div>
+        <a href="Reflexi%C3%B3n.html">Salir</a>
+    </div>
+
+<center>  <div id="mitexto">     
+         <p>  <h1 id="INICIO">
+            <div id="marquee">
+            <marquee  behavior="scroll" direction="down">
+            <p>  <id="His"><font color="#1e1a97"><center>. ☼ಐ ·͜·˖ 𓇣 AGENDAR CITA . ☼ಐ ·͜·˖ 𓇣</center></id></font>
+            </marquee>
+            </div>
+            <font size="+1" color="white"><i> El agendar una cita va derivada de que tenga el paciente ya que si es de urgencia se debe
+                de tratar de inmediato pero si no es el caso se debe de sacar una cita con anticipacion dias hanteriores. 
+                El agendar una cita se tiene que sacar personal mente, acudir al Centro de Salud al igual que se deben de respetar horarios de atencion.
+                <br><font color="purple"><strike>atennncionnn....</strike></font>
+            <center><p> <A href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fp%2FCl%25C3%25ADnica-Santa-Cruz-100067838243642%2F%3Flocale%3Des_LA"> Visita nuestra pagina web </A></p>
+
+            </font></i></p> </div>
+
+        <div id="horas"><h1 id="atencion"></h1>
+            <p> <h1 id="HORAS DE ATENCION"> <font color="#1e1a97">₊˚౨ৎHORAS DE ATENCION౨ৎ₊˚</font></h1>
+            <p><font size="+1">
+                <p><i> <FONT COLOR=#f712e3>Las horas de atención en un hospital varían según el tipo de servicio, pero en general, los hospitales ofrecen atención 24/7</FONT> para emergencias mientras que consultas y tratamientos programados suelen estar disponibles en horas establecids, de lunes a viernes. Esto asegura que los pacientes reciban la atención en cualquier momento.
+            </i></p></div>
+                     <div id= tab><center> <TABLE BORDER = "8"  CELLPADDING="30"  BORDERCOLOR="#9198FA">
+  <tr>
+  <th><I><font  size="3" face="algerian" COLOR=white>DIAS DE ATENCION</font></I></th>
+    <th><I> <font  size="3" face="algerian" COLOR=white>HORARIO DE ATENCION</font></I></th>
+    <th><I> <font  size="3" face="algerian" COLOR=white>CONSULTORIOS</font></I></th>
+  </tr>
+  <tr>
+    <th><I><font  size="2" face="algerian" COLOR=white> 24-03-25<br> 25-03-25<br> 26-03-25<br> 27-03-25<br> 28-03-25<br> 29-03-25<br> 30-03-24<br> 01-04-25 </font></I></th>
+    <th><I> <font  size="2" face="algerian" COLOR=white> Lunes a Domingo 24/7</font></I></th>
+    <th><I> <font  size="2" face="algerian" COLOR=white> Consultorio 1<br> Consultorio 2<br> Consultorio 3 </font></I></th>
+  </tr>    
+</TABLE></CENTER> </div>          
+            <div id="mitexto2"> <h1 id="CONSULTORIOS"></h1>    
+            <div id="marquee">
+            <marquee behavior="scroll" direction="left">
+            <p>  <id="His"><font color="#1e1a97">. ☼ಐ ·͜·˖ 𓇣 Consultorios . ☼ಐ ·͜·˖ 𓇣</font></id>
+            </marquee>
+            </div>
+            <font size="+1"><i> El agendar tu cita se asignan distintas formas esto tambien se asignan distintos consultorios
+             cada consultorio tiene distintos especializtas y horarios de atencion  dependiendo del padecimiento, tipo 
+             de cita o dependiendo del tiempo disponible del especializta.Las consultas deben de ser rapidas devido al tiempo medido por sus horas de abrir y cerrar.<br></font>
+             <li><FONT COLOR=white> CONSULTORIO 1:</FONT>  En el consultorio 1 se trata a los pacientes con padecimientos comunes  (gripes, dolores estomacales).<br></li>
+             <li><FONT COLOR=white> CONSULTORIO 2:</FONT>  En el consultorio 2 se trata a los pacientes con algun tipo de fractura (huesos).<br></li>
+             <li><FONT COLOR=white> CONSULTORIO 3:</FONT>  En el consultorio 3 se trata a los pacientes con alguna complicacion como discapacidades.<br></li>
+             
+                </i></p>   </div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+    <center>
+   <footer>
+                        <p>Centro de Salud de Santa Cruz Tepexpan
+                        CECyTEM PLANTEL JIQUIPILCO<br>
+                        Telefono:<font color="blue"> 712 111 0107</font><br>
+                        <I><p><A HREF="mailto:aopd080512mmcmxna0@soycecytem.mx">CORREO ELECTRONICO</A></p></I>
+                        María Fernanda Ortega Pavón / Abraham Antonio Rumualdo / Efigenia Mejía Becerril / Luis Ángel Aguilar Cruz / Daniela Ambrocio Piña.<br>
+                        </p>
+                </footer></center>  
+     <div id= vi1>
+            <video widyh ="300" height="205" controls="controls"> 
+                <source src="Brecha.mp4"
+                        type="VIDEO/MP4"/>
+                </video>
+                   </div>     
+    <script type="text/javascript">
+    function agendar() {
+        var nombre = document.getElementById("n1").value;
+        var fecha = document.getElementById("n4").value;
+        var tipo = document.getElementById("n6").value;
+
+        document.getElementById("resuls").value = "Cita para " + nombre + " el día " + fecha + "  (" + tipo + ")";
+        alert("¡Cita agendada!");
+    }
+    function cancelar() {
+        document.getElementById("resuls").value = "";
+        alert("Cita cancelada.");
+    }
+</script>
+ 
+</center></body></html></html>

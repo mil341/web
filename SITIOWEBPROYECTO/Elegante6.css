@@ -1,0 +1,141 @@
+            body{
+                background-color: floralwhite; /*Coloca un color al fondo*/
+                
+                background-image: url(n.jpg);
+    
+            }
+            header {
+            background-color: #71C6D9; /*Coloca un color de fondo*/
+            font-family:  Script MT Bold ; /*Coloca un un tipo de letra al encabezado*/
+            color: white; /*Coloca un color a la letra*/
+            font-style:oblique;
+            margin-top: 30px; /*Ajusta el tamaño del borde*/
+            border-color: burlywood; /*Coloca un color al borde*/
+            border-radius: 5px; 
+            font-variant-caps: small-caps; /*Ajusta el texto con pequeñas minusculas*/
+            
+            
+            background-image: url('gg.png'); /*Coloca una imagen o icono alencabezado*/
+            background-size:182px; /*Ajusta el tamaño de la imagen*/
+            background-position: left; /*Ajusta la imagen a una posicion; left,right,center*/
+            background-repeat: no-repeat; /*Evita que la imagen se repita*/
+            
+            }
+
+       
+    
+            nav {
+            justify-content: center; /*Ajusta el contenido al centro*/
+            display:flex; /*Centra la barra de navegación*/
+            background-color: #F2C9C9;
+            font-size: 35;  /*Ajusta el tamaño del contenido*/
+            grid-gap: 70px; /*Separa los elementos de la barra de navegación*/
+            font-style: oblique;
+            border-radius: 5px;
+            padding: 30px;
+            
+            }
+
+            aside{
+            margin-top:100px; 
+            background: linear-gradient(45deg, #3A848C, #93E0ED, #89D1D9);
+            float: left; 
+            width:200px;
+            height: 290px;
+            padding: 05px;
+            font-size: 12.5px;
+            position: fixed;
+            font-family: Script MT Bold;
+            font-style: oblique;
+            color: beige;
+            border-radius: 15px;
+            }
+
+    
+            
+            
+            
+            article{
+            margin-top: -120px; /*Ajusta el tamaño del top*/
+            border-radius: 20px; /*Se utiliza para redondear las esquinas de un elemento*/ 
+            border-style: dotted;
+            width:400px;
+            border-color: antiquewhite;
+            opacity: 0.7; /*Ajusta y agrega opacidad a un div o imagen*/
+            background: linear-gradient(45deg, #C379D0, #93E0ED, #E6CEED); /*Coloca colores degradados*/
+                }
+
+            section-servicios{
+            background-color: palegreen;
+            margin-top: 50px;
+            border-color:salmon;
+            color: black;
+            
+            }
+
+            /* Estilos para la barra superior */
+            .barra-superior {
+            background-color: deepskyblue; 
+            color: white; 
+            padding: 2px;
+            position: fixed; /*Permite que un elemento permanesca fijo en una posición*/
+            top: 0;
+            width: 98.7%; 
+            display: flex; /*Permite que los elementos se organizen en línea (horizontalmente, por defecto)*/
+            justify-content: space-between;  /*Esto distribuye los elementos en el eje horizontal con espacio igual entre ellos.*/
+            align-items: center; /*Alinea los elementos verticalmente en el centro, dando un aspecto equilibrado y ordenado.*/
+            }
+
+            /* Estilos para el botón de salida */
+            .barra-superior a {
+            color: white;
+            text-decoration: none; 
+            padding: 8px 12px; 
+            background-color: lightblue; 
+            border-radius: 5px; /*Se utiliza para redondear las esquinas de un elemento*/
+            font-weight: bold; 
+            }
+            .barra-superior a:hover {
+            background-color: palevioletred; /* Cambiar color al pasar el mouse */
+            }
+            /* Espaciado para el contenido principal */
+
+            .contenido {
+            margin-top: 50px;
+            padding: 20px; /*Define el espacio dentro del borde del elemento*/
+            }
+
+
+        
+            footer {
+            height: 175px;
+            margin-top: 900px;
+            background-color: lightblue;
+            border-style: double;
+            color: #734924;
+            border: 15px;
+            border-radius: 60px;
+            border-style:dotted ;
+            border-color:skyblue;
+            color: black;
+
+         
+            background-image: url('cecy.png'); /*Agrega una imagen de fondo*/
+            background-size:contain; /*Ajusta la posicion de la imagn de fondo en este caso se ajusta a todo el fondo*/
+            position:static;
+            background-repeat: no-repeat; /*Evita que la imagen se repita*/
+            font-variant-caps: small-caps; /*Ajusta el texto con pequeñas minusculas*/
+            }
+ section{
+
+    background-color: mediumaquamarine;
+    margin-top:285px;
+ 
+}
+.efecto-sombra{
+	color:greenyellow;
+	font-weight: 900;
+	text-shadow: 3px 3px 0px black,5px 5px 0px red;
+}
+
+      

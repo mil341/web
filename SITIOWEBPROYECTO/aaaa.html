@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Salud de Santa Cruz Tepexpan</title>
+    <link rel="stylesheet" href="Elegantep.css">
+    <style>
+        /* Tus estilos CSS aquí */
+        #Informacionprincipal {
+            background: linear-gradient(45deg, hotpink, lightpink, hotpink);
+            position: absolute;
+            top: 400px;
+            left: 360px;
+            color: rebeccapurple;
+            font-size: 18px;
+            width: 650px;
+            height: 195px;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Agrega más estilos aquí */
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="programas.html">Programas</a></li>
+                <li><a href="Cuidan.html">Cuidan de ti</a></li>
+                <li><a href="atencionc.html">Atención Médica</a></li>
+                <li><a href="AgendarC.html">Agendar Cita</a></li>
+                <li><a href="Huesero.html">¿Sabias Qué?</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="servicios">
+            <h2>Servicios Disponibles</h2>
+            <table>
+                <tr>
+                    <th>Servicio</th>
+                    <th>Ejemplo</th>
+                    <th>Disponibilidad</th>
+                    <th>Sector Social</th>
+                </tr>
+                <tr>
+                    <td>Consulta General</td>
+                    <td>Diagnóstico médico, control de enfermedades</td>
+                    <td>Disponible</td>
+                    <td>Comunidad en general</td>
+                </tr>
+                <!-- Agrega más filas aquí -->
+            </table>
+        </section>
+        <div id="Informacionprincipal">
+            <h4 id="intro">La clínica de Santa Cruz Tepexpan</h4>
+            <p>La Clínica Médica Santa Cruz Tepexpan se distingue por su compromiso con la salud y bienestar de sus pacientes.</p>
+        </div>
+        <!-- Agrega más contenido aquí -->
+        <div class="container">
+            <h2>Registra tus datos:</h2>
+            <form id="citaForm">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" required>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" required>
+                <label for="motivo">Domicilio:</label>
+                <textarea id="motivo"></textarea>
+                <button type="submit">Agendar Cita</button>
+            </form>
+            <p id="mensaje"></p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <script>
+        // Agrega tus scripts aquí
+        document.getElementById("citaForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            let nombre = document.getElementById("nombre").value.trim();
+            let telefono = document.getElementById("telefono").value.trim();
+            if (nombre === "" || telefono === "") {
+                alert("Por favor, completa todos los campos obligatorios.");
+                return;
+            }
+            document.getElementById("mensaje").textContent = "Cita agendada correctamente.";
+        });
+    </script>
+</body>
+</html>
